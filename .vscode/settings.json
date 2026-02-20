@@ -6,11 +6,12 @@
     "jspm",
     "nuxt",
     "pids",
-    "sveltekit",
     "stylelintcache",
+    "sveltekit",
     "vite",
     "vitepress",
     "vuepress",
-    "wscript"
+    "wscript",
+    "xtwitter"
   ]
 }
