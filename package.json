@@ -4,7 +4,10 @@
   "description": "A npm package about Dileepa Bandara.",
   "main": "./dist/src/main.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "publishConfig": {
     "access": "public"
@@ -36,6 +39,8 @@
   "homepage": "https://github.com/dileepadev/dileepadev-npm#readme",
   "devDependencies": {
     "@types/node": "^22.19.11",
-    "typescript": "^5.9.3"
+    "@vitest/coverage-v8": "^4.0.18",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   }
 }
