@@ -19,7 +19,7 @@
   "author": "Dileepa Bandara",
   "license": "MIT",
   "bin": {
-    "dileepadev": "./dist/bin/index.js"
+    "dileepadev-npm": "./dist/bin/index.js"
   },
   "type": "module",
   "engines": {

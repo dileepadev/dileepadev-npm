@@ -24,20 +24,20 @@ console.log(greet('world'));
 The package provides an executable. Install globally or use `npx`:
 
 ```bash
-npx dileepadev Alice
+npx dileepadev-npm Alice
 ```
 
 Then run (if installed globally):
 
 ```bash
-dileepadev Bob
+dileepadev-npm Bob
 # → Hello, Bob!
 ```
 
 Omitting the name prints a greeting for "World":
 
 ```bash
-dileepadev
+dileepadev-npm
 # → Hello, World!
 ```
 
