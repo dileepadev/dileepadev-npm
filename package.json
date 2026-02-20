@@ -1,5 +1,5 @@
 {
-  "name": "dileepadev-npm",
+  "name": "@dileepadev/dileepadev-npm",
   "version": "0.1.0",
   "description": "A npm package about Dileepa Bandara.",
   "main": "./dist/src/main.js",

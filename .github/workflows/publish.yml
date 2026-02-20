@@ -31,13 +31,10 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Configure GitHub Packages auth
-        run: |
-          echo "registry=https://npm.pkg.github.com" >> ~/.npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
-
       - name: Publish to GitHub Packages
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   publish-npm:
     name: Publish to npmjs.org
@@ -62,8 +59,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Configure npm for authentication
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
       - name: Publish to npm
         run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
