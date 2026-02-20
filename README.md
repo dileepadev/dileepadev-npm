@@ -58,7 +58,7 @@ npm install
 npm run build
 ```
 
-- Edit the source code in `src/` or `bin/`, then run the build command. 
+- Edit the source code in `src/` or `bin/`, then run the build command.
 - Publish new versions via `npm version`/`npm publish`.
 
 ## License

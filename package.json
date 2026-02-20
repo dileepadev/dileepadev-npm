@@ -2,7 +2,7 @@
   "name": "dileepadev-npm",
   "version": "0.1.0",
   "description": "A npm package about Dileepa Bandara.",
-  "main": "./dist/bin/index.js",
+  "main": "./dist/src/main.js",
   "scripts": {
     "build": "tsc"
   },
