@@ -7,7 +7,8 @@ This file tracks tasks, improvements, and features planned for upcoming updates 
 
 ## Upcoming Tasks
 
-Currently, there are no specific tasks available for the next release.
+- [x] Initial TypeScript support with ESM and project refactoring.
+- [ ] Add more utility functions.
 
 <!-- Example Task List Format
 

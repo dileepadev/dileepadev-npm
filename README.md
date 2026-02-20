@@ -13,7 +13,7 @@ npm install @dileepadev/npm # or your scoped package name
 ### As a library
 
 ```js
-const { greet } = require('dileepadev-npm');
+import { greet } from 'dileepadev-npm';
 
 console.log(greet('world'));
 // → "Hello, world!"
@@ -21,15 +21,13 @@ console.log(greet('world'));
 
 ### As a CLI
 
-The same file provides the executable. Install globally or use `npx`:
+The package provides an executable. Install globally or use `npx`:
 
 ```bash
-npm install -g @dileepadev/npm    # or your package name
-# or
 npx dileepadev Alice
 ```
 
-Then run:
+Then run (if installed globally):
 
 ```bash
 dileepadev Bob
@@ -52,7 +50,16 @@ name is provided it defaults to `"World"`.
 
 ## Development
 
-- Edit the source code and publish new versions via `npm version`/`npm publish`.
+```bash
+# Install dependencies
+npm install
+
+# Build the project
+npm run build
+```
+
+- Edit the source code in `src/` or `bin/`, then run the build command. 
+- Publish new versions via `npm version`/`npm publish`.
 
 ## License
 

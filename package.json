@@ -2,25 +2,40 @@
   "name": "dileepadev-npm",
   "version": "0.1.0",
   "description": "A npm package about Dileepa Bandara.",
-  "keywords": [
-    "dileepadev"
-  ],
-  "homepage": "https://github.com/dileepadev/dileepadev-npm#readme",
-  "bugs": {
-    "url": "https://github.com/dileepadev/dileepadev-npm/issues"
+  "main": "./dist/bin/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dileepadev/dileepadev-npm.git"
   },
-  "license": "MIT",
-  "author": "Dileepa Bandara",
-  "type": "commonjs",
-  "main": "index.js",
-  "files": [
-    "index.js"
+  "keywords": [
+    "dileepadev"
   ],
+  "author": "Dileepa Bandara",
+  "license": "MIT",
   "bin": {
-    "dileepadev": "./index.js"
+    "dileepadev": "./dist/bin/index.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "files": [
+    "dist/bin",
+    "dist/src"
+  ],
+  "bugs": {
+    "url": "https://github.com/dileepadev/dileepadev-npm/issues"
+  },
+  "homepage": "https://github.com/dileepadev/dileepadev-npm#readme",
+  "devDependencies": {
+    "@types/node": "^22.19.11",
+    "typescript": "^5.9.3"
   }
 }
